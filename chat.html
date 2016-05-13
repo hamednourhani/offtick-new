@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>offtick</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="body-wrapper">
+
+    <div class="site-header">
+        <div class="top-bar chat-header">
+            <section class="layout">
+                <a href="http://offtick.com" class="site-logo-link">
+                    <img src="images/offtick-logo-69x50.png" alt="" class="site-logo">
+                </a>
+
+                <div class="search-container">
+                    <form name="searchform" class="search-form">
+                        <select name="city" id="searchcity" class="search-city">
+                            <option value="tehran">تهران</option>
+                            <option value="esfehan">اصفهان</option>
+                            <option value="shiraz">شیراز</option>
+                            <option value="mashahd">مشهد</option>
+                            <option value="kerman">کرمان</option>
+                            <option value="khozestan">خوزستان</option>
+                        </select>
+                        <input type="text" name="s" class="search-text" placeholder="جستجوی تخفیف .."/>
+                        <input class="searchbutton" type="submit" value=""/>
+                    </form>
+                </div>
+                <!--search-container-->
+
+                <div class="plus-icon-wrapper">
+                    <a href="#" class="plus-icon">
+                        <i class="fa fa-plus"></i>
+                        <span class="plus-icon-title">افزودن محتوا</span>
+                    </a>
+                </div>
+                <!--plus-icon-wrapper-->
+
+                <span id="menu-toggler" class="menu-toggler">
+                    <i class="fa fa-bars"></i>
+                </span>
+                <!--menu-toggler-->
+
+                <div class="loggedin-icons">
+                    <ul class="loggedin-icons-list">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>
+                            </a>
+                            <span class="icon-qty">2</span>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-th-list" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <i id="loggedin-settings-button" class="fa fa-cog" aria-hidden="true"></i>
+                            <ul id="loggedin-settings-list" class="dropdown-menu">
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/MenuBuilder">ویرایش وب سایت</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/Offer/OrderedOffers">آفتیک های خرید</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/Profile/EditProfileCP"> ویرایش پروفایل </a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/Account/ChangePassword">تغییر رمز عبور</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/Security">تنظیمات</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/Account/LogOff">خروج</a>
+                                </li>
+
+                                <li role="presentation" class="divider"></li>
+
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="#">راهنما</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/Offer/sendfeedback">گزارش یک خطا</a>
+                                </li>
+                                <li role="presentation" class="text-right">
+                                    <a role="menuitem" tabindex="-1" href="/User/Profile/DisableAccount">غیر فعال سازی اکانت</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <!--loggedin-icons-list-->
+                </div>
+                <!--loggedin-icons-->
+
+                <div class="panel-links">
+                    <a href="#" class="user-avatar">
+                        <img src="images/user-avatar.png" alt="">
+
+                    </a>
+                    <a href="#" class="logout-button">خروج</a>
+                </div>
+
+
+                <div class="cart-wrapper">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="orders-qty">2</span>
+
+                    <div class="cart-content">
+                        <ul class="cart-list">
+                            <li>
+                                <img src="images/adds/item-thumb.png" alt="" class="item-thumb"/>
+                                <span class="item-name">Item One</span>
+                                <span class="order-qty">2</span>
+                            </li>
+                            <li>
+                                <img src="images/adds/item-thumb.png" alt="" class="item-thumb"/>
+                                <span class="item-name">Item Two</span>
+                                <span class="order-qty">1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--cart-wrapper-->
+
+
+
+
+                <div class="contact-wrapper">
+                    <span class="contact-phone">021-<em>66926649</em></span>
+                </div>
+
+
+            </section>
+            <!--layout-->
+
+        </div>
+        <!--top-bar-->
+
+        <nav class="mobile-nav">
+            <ul class="mobile-menu">
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fa fa-sign-in"></i>
+                        <span class="menu-content">ورود</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fa fa-pencil"></i>
+                        <span class="menu-content">ثبت نام</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="menu-content">سبد خرید</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--mobile-nav-->
+
+
+
+    </div>
+    <!--site-header-->
+
+    <div class="site-main">
+        <div class="main-wrapper chat">
+
+            <div class="chat-container">
+
+                <div class="chat-box-container">
+
+                    <div class="chat-box-header">
+                        <form class="search-chats-list">
+                            <input type="text" placeholder="Search" name="s">
+                            <input type="submit" name="submit">
+                        </form>
+                    </div>
+                    <!--chat-box-header-->
+
+                    <ul class="chat-box-list">
+                        <li class="active">
+                            <div class="user-avatar-container">
+                                <img class="avatar" src="images/user-avatar.png" alt="">
+                            </div>
+                            <span class="user-name">User Name</span>
+                            <span class="chat-excerpt">Chat excerpt will be...</span>
+                            <span class="last-message-date">7:41pm</span>
+                        </li>
+                        <li class="not-read">
+                            <div class="user-avatar-container">
+                                <img class="avatar" src="images/user-avatar.png" alt="">
+                            </div>
+                            <span class="user-name">User Name</span>
+                            <span class="chat-excerpt">Chat excerpt will be...</span>
+                            <span class="new-messages-count">2</span>
+                            <span class="last-message-date">9:04pm</span>
+                        </li>
+                        <li class="not-read">
+                            <div class="user-avatar-container">
+                                <img class="avatar" src="images/user-avatar.png" alt="">
+                            </div>
+                            <span class="user-name">User Name</span>
+                            <span class="chat-excerpt">Chat excerpt will be...</span>
+                            <span class="new-messages-count">4</span>
+                            <span class="last-message-date">1:21am</span>
+                        </li>
+                    </ul>
+                    <!--chat-box-list-->
+                </div>
+                <!--chats-list-->
+
+                <div class="chat-content-container">
+
+                    <div class="chat-content-header">
+                        some form and links
+                    </div>
+                    <!--chat-content-header-->
+
+                    <div class="chat-wrapper">
+                        <ul class="chat-content-list">
+                            <li>
+                                <div class="single-message-content">
+                                    <div class="user-avatar-container">
+                                        <img src="images/user-avatar.png" alt="">
+                                    </div>
+                                    <div class="message-container">
+                                        <span class="user-name">User Name</span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi id ipsam natus quae quibusdam quidem quis temporibus ullam?
+
+                                        <span class="message-date checked">11:10am</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="single-message-content">
+                                    <div class="user-avatar-container">
+                                        <img src="images/user-avatar.png" alt="">
+                                    </div>
+                                    <div class="message-container">
+                                        <span class="user-name">User Name</span>
+                                        <div class="reply-to-this">
+                                            <span class="sender-user-name">SenderName</span>
+                                            <span class="message-excerpt">Chat Content will display here..</span>
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, laudantium obcaecati. Ab aperiam distinctio enim facere nostrum numquam placeat voluptates.
+                                        <span class="message-date checked">4:30pm</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="my-message">
+                                <div class="single-message-content">
+                                    <div class="user-avatar-container">
+                                        <img src="images/user-avatar.png" alt="">
+                                    </div>
+                                    <div class="message-container">
+                                        <span class="user-name">User Name</span>
+                                        <div class="reply-to-this">
+                                            <span class="sender-user-name">SenderName</span>
+                                            <span class="message-excerpt">Chat Content will display here..</span>
+                                        </div>
+                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse, laudantium nulla porro quae quia quidem similique sint voluptate voluptatum.
+                                        <span class="message-date sent">7:41pm</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--single-chat-->
+
+                    <div class="chat-content-footer">
+                        some form and links
+                    </div>
+                    <!--chat-content-footer-->
+                </div>
+                <!--chat-content-container-->
+
+            </div>
+            <!--chat-container-->
+
+        </div>
+        <!--main-wrapper-->
+    </div>
+    <!--site-main-->
+
+    <footer class="site-footer hide-footer" id="hideFooter">
+
+        <span class="hide-footer-toggler" id="hideFooterToggler">
+            <i class="fa fa-angle-up" id="fa-angle-up" aria-hidden="true"></i>
+            <i class="fa fa-angle-down" id="fa-angle-down" aria-hidden="true"></i>
+        </span>
+
+        <div class="footer-columns">
+            <section class="layout">
+
+                <aside class="footer-col">
+                    <h4 class="aside-title">خانه</h4>
+                    <div class="aside-content">
+                        <ul>
+                            <li><a href="#">ثبت نام در شرکت آفتیک جهت فروش کالا یا خدمات</a></li>
+                            <li><a href="#">حریم شخصی کاربران</a></li>
+                            <li><a href="#"></a>ثبت شکایات</li>
+                            <li><a href="#">ضوابط و مقررات</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <aside class="footer-col">
+                    <h4 class="aside-title">راهنمای خرید از آفتیک</h4>
+                    <div class="aside-content">
+
+                        <ul>
+                            <li><a href="#">آفتیک چگونه کار می کند</a></li>
+                            <li><a href="#">راهنمای پرداخت الکترونیک</a></li>
+                            <li><a href="#">سفارشات چگونه ارسال می شوند</a></li>
+                            <li><a href="#"></a></li>
+
+                        </ul>
+                    </div>
+                </aside>
+
+
+
+                <aside class="footer-col">
+                    <h4 class="aside-title">راهنمای کاربران</h4>
+                    <div class="aside-content">
+                        <ul>
+
+                            <li><a href="#">دعوت به همکاری با آفتیک</a></li>
+                            <li><a href="#">سوالات متداول</a></li>
+                            <li><a href="#">وبلاگ آفتیک</a></li>
+
+                        </ul>
+                    </div>
+                </aside>
+
+                <aside class="footer-col">
+                    <h4 class="aside-title"> تماس با ما</h4>
+                    <div class="aside-content">
+                        <ul>
+
+                            <li><a href="#">تلفن : 66926648</a></li>
+                            <li><a href="#">آدرس: تهران-ستارخان-کوثر 2-پلاک 15-واحد 6</a></li>
+                            <li><a href="#">info@offtick.com</a></li>
+
+                        </ul>
+                    </div>
+                </aside>
+
+            </section>
+        </div>
+
+        <div class="site-credit">
+             <span>
+تمامي كالاها و خدمات اين فروشگاه، حسب مورد داراي مجوزهاي لازم از مراجع مربوطه مي‌باشند و فعاليت‌هاي اين سايت تابع قوانين و مقررات جمهوري اسلامي ايران است. </span>
+            <span>©2016 - an Abbas Bagherian Kasgari production All Rights Reserved</span>
+        </div>
+
+
+        <!--footer-columns-->
+
+        <nav class="footer-nav">
+            <ul class="footer-icons">
+                <li class="mobile-footer-icon active">
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="mobile-footer-icon">
+                    <a href="#">
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="mobile-footer-icon plus-icon">
+                    <a href="#">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="mobile-footer-icon">
+                    <a href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="mobile-footer-icon">
+                    <a id="search-toggler" >
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <div id="buttom-search-container" class="buttom-search-container">
+                    <form name="searchform" class="search-form">
+                        <select name="city" id="" class="search-city">
+                            <option value="tehran">تهران</option>
+                            <option value="esfehan">اصفهان</option>
+                            <option value="shiraz">شیراز</option>
+                            <option value="mashahd">مشهد</option>
+                            <option value="kerman">کرمان</option>
+                            <option value="khozestan">خوزستان</option>
+                        </select>
+                        <input type="text" name="s" class="search-text" placeholder="جستجوی تخفیف .."/>
+                        <input class="searchbutton" type="submit" value=""/>
+                    </form>
+                </div>
+            </ul>
+        </nav>
+    </footer>
+    <!--site-footer-->
+</div>
+</body>
+<!--body-->
+<script type="text/javascript" src="js/lib/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/lib/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/plugins/offtick-jquery-plugins.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</html>

@@ -1,0 +1,222 @@
+/* base style */
+body,html{
+	width : 100%;
+	height : 100%;
+	min-height : 100%;
+	padding : 0;
+	margin : 0;
+	min-height : 100%;
+	display : block;
+	@include single-transition(all 0.4s);
+
+
+
+}
+body {
+	// @extend .back-gradiant-rtl;
+	font-family : $web_yekan;
+	direction : rtl;
+	font-size : 100%;
+	line-height : 180%;
+	form{
+		direction: rtl;
+		text-align: right;
+	}
+
+
+
+}
+.body-wrapper{
+	width : 100%;
+	margin:auto;
+	margin-top : -1px;
+	overflow : hidden;
+	position : relative;
+	background-color: $grey1;
+	background : image-url("background/pattern1.jpg") top left repeat;
+
+}
+.layout{
+	@include container;
+	position : relative;
+	
+}
+
+
+.fa {
+	@include fa-icon;
+}
+a{
+	text-decoration : none;
+	color : $blue;
+	&:hover{
+		color : $gol;
+	}
+}
+// #wpadminbar{
+// 	display :none;
+// }
+img,video,audio,iframe{
+	max-width : 100%;
+}
+input,textarea,button{
+	max-width : 100%;
+	@include border-radius(5px);
+}
+h1,h2,h3,h4,h5,h6{
+	color : $black1;
+
+}
+dl, menu, ol, ul,dir {
+    
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+.onScreen{
+ 	@include single-transition(opacity 2s ease-in-out);
+ 	opacity : 1;
+}
+
+
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+	color: #7d7b6d;
+}
+
+:-moz-placeholder {
+	color: #7d7b6d;
+}
+
+::-moz-placeholder {
+	color: #7d7b6d;
+}
+
+:-ms-input-placeholder {
+	color: #7d7b6d;
+}
+
+/*
+ * Responsive images
+ *
+ * Fluid images for posts, comments, and widgets
+ */
+.entry-content img,
+.entry-summary img,
+.comment-content img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
+
+/* Make sure images with WordPress-added height and width attributes are scaled correctly. */
+.entry-content img,
+.entry-summary img,
+.comment-content img[height],
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto;
+}
+
+img.size-full,
+img.size-large,
+img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+}
+
+/* Make sure videos and embeds fit their containers. */
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+/* Override the Twitter embed fixed width. */
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important;
+}
+
+/* Images */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure.wp-caption.alignleft,
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+figure.wp-caption.alignright,
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	color: #220e10;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0 0 24px;
+}
+
+div.wp-caption.alignright img[class*="wp-image-"] {
+	float: right;
+}
+
+div.wp-caption.alignright .wp-caption-text {
+	padding-left: 10px;
+}
+
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol {
+	list-style-position: inside;
+}
+/*-------------js Composer---------------------*/
+.vc_grid.vc_row .vc_grid-item {
+	z-index: 0 !important;
+}

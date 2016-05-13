@@ -1,0 +1,97 @@
+.dg-container{
+  width: 100%;
+  height : 320px;
+  @include at-breakpoint($medium){
+    height: 380px;
+  }
+  position: relative;
+}
+.dg-wrapper{
+  width : 380px;
+  max-width : 100%;
+  @include at-breakpoint($xmedium) {
+    width: 420px;
+  }
+  height: 320px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -o-perspective: 1000px;
+  -ms-perspective: 1000px;
+  perspective: 1000px;
+}
+.dg-wrapper a{
+  width: 400px;
+  height: auto;
+  max-height : 300px;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  //background: transparent url(../images/slides/browser.png) no-repeat top left;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+.dg-wrapper a.dg-transition{
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img{
+  display: block;
+  padding: 5px;
+}
+.dg-wrapper a div{
+  font-style: italic;
+  text-align: center;
+  line-height: 50px;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+  color: #333;
+  font-size: 16px;
+  width: 100%;
+  bottom: -55px;
+  display: none;
+  position: absolute;
+}
+.dg-wrapper a.dg-center div{
+  display: block;
+}
+.dg-container nav{
+  width: 120px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -60px;
+}
+.dg-container nav span{
+  @extend .def-transition;
+  float: left;
+  cursor:pointer;
+  width: 30px;
+  height: 25px;
+  opacity: 0.7;
+  text-align: center;
+  i:before{
+    @extend .def-transition;
+    display : inline-block;
+    color : $white;
+    vertical-align: middle;
+    font-size : 100%;
+  }
+  //background: url('../images/slides/arrows.png') no-repeat top left;
+}
+.dg-container nav span:hover{
+  opacity: 1;
+  i:before{
+    color : $gol;
+  }
+}

@@ -1,0 +1,234 @@
+.site-footer{
+  background-color: lighten($grey3,5%);
+  color : $white;
+  position: relative;
+  span.hide-footer-toggler{
+    i{
+      &:before{
+
+      @extend .def-transition;
+      cursor: pointer;
+      color : $grey3;
+      background-color: $grey1;
+      padding : 10px;
+      position: absolute;
+      top : -30px;
+      right : 10px;
+      font-size : 140%;cursor: pointer;
+      color: $white;
+      background-color: lighten($grey3,5%);
+      @include border-top-radius(5px);
+      padding: 5px 15px 10px;
+      position: absolute;
+      top: -58px;
+      right: 14px;
+      font-size: 180%;
+      }
+      &.fa-angle-up{
+
+      }
+      &.fa-angle-down{
+        display: none;
+      }
+    }
+    &:hover{
+      i:before{
+        color : $gol;
+        transform : translateY(-5px);
+
+      }
+      i.fa-angle-down:before{
+        transform : translateY(5px);
+      }
+    }
+
+  }
+  h4,h3{
+    color : $grey2;
+  }
+  a{
+    color : $grey2;
+    &:hover{
+      color : $gol;
+    }
+  }
+  .site-credit{
+    padding : 8px;
+    padding-bottom : 48px;
+    @include at-breakpoint($xmedium){
+      padding-bottom : 8px;
+    }
+    text-align : center;
+    background-color: darken($grey3, 10%);
+    color : $white;
+    font-size : 70%;
+    span {
+      display: inline-block;
+      width : 100%;
+    }
+  }
+  &.hide-footer{
+   @extend .def-transition;
+    //position: absolute;
+    //top : 100%;
+    //right : 0px;
+    //left : 0px;
+  }
+}
+
+
+.footer-columns{
+  padding : 20px 0px;
+  overflow: hidden;
+  aside.footer-col{
+    @include span-columns(12,12);
+    @include at-breakpoint($medium){
+      @include span-columns(3,12);
+      margin-right : auto;
+    }
+    &:nth-of-type(4n){
+      @include span-columns(12,12);
+      @include at-breakpoint($medium){
+        @include span-columns(3 omega,12);
+        margin-right : auto;
+      }
+    }
+
+    h4.aside-title{
+      border-bottom : 1px dashed darken($grey2,30%);
+      margin : 10px 0px;
+      padding-bottom : 5px;
+    }
+    .aside-content{
+      font-size: 90%;
+    }
+  }
+  
+
+}
+nav.footer-nav{
+  @extend .def-transition;
+  background-color: $grey3;
+  @include box-shadow(0px 0px 4px $grey3);
+  text-align: center;
+  display : block;
+  position: fixed;
+  bottom : 0px;
+  right : 0px;
+  left : 0px;
+  z-index: 99999;
+  opacity: 0.8;
+  &:hover{
+    opacity: 1;
+  }
+  @include at-breakpoint($xmedium){
+    display : none;
+  }
+  ul.footer-icons{
+    padding:0px;
+    margin: 0px;
+    position: relative;
+    li.mobile-footer-icon{
+      position: relative;
+      width : 20%;
+      margin :{
+        right : -2px;
+        left : -2px;
+      }
+      display : inline-block;
+      span.icon-qty{
+        position: absolute;
+        top : 5px;
+        right : 5px;
+        font-size: 90%;
+        display : inline-block;
+        background-color: $gol;
+        color: $white;
+        padding : 4px 8px;
+        height : 22px;
+        line-height: 1;
+        @include border-radius(10px);
+      }
+      a{
+        @extend .def-transition;
+        display: inline-block;
+        padding : 10px 10px 3px;
+        color : $white;
+        width : 100%;
+        cursor: pointer;
+        
+        i:before{
+          font-size : 180%;
+        }
+        &:hover{
+          background-color: $blue;
+          color : $grey1;
+        }
+      }
+      &.plus-icon{
+        a{
+          background-color: $gol;
+        }
+      }
+      &.active{
+        a{
+          background-color: $blue;
+          &:hover{
+            background-color: $blue;
+            color : $grey1;
+          }
+        }
+      }
+      &.plus-icon{
+        a{
+          background-color: $gol;
+          &:hover{
+            background-color: $blue;
+            color : $grey1;
+          }
+        }
+      }
+    }
+    div.buttom-search-container{
+
+      position: absolute;
+      bottom : 101%;
+      left : 0px;
+      width : 100%;
+      background-color: $blue;
+      display: none;
+      padding : 10px 15px;
+      text-align: center;
+      opacity: 0.8;
+      &:hover{
+        opacity: 1;
+      }
+      input,select{
+        padding : 4px;
+        margin : 0px;
+        color : $black1;
+
+      }
+      select.search-city{
+        border : 1px solid darken($grey2,15%);
+        @include border-right-radius(10px);
+        margin-left : -5px;
+        padding : 3px 12px;
+        color : $black1;
+      }
+      input.search-text{
+        border : 1px solid darken($grey2,15%);
+        @include border-left-radius(10px);
+        @include border-right-radius(0px);
+        color : $black1;
+      }
+      input.searchbutton{
+        background: none;
+        border : 0px;
+        outline : none;
+
+      }
+      
+    }
+  }
+}
